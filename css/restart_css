@@ -1,0 +1,124 @@
+body, html {
+    background-image: url(https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    position: relative;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+a:active {
+    color: rgb(0, 0, 0);
+}
+a:visited{
+    color: #000;
+}    
+
+#media {
+    padding-left: 0;
+    margin: 15px 15px;
+
+}
+
+.social {
+    color: black;
+    text-align: center;
+    display: inline;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.46);
+    padding: 5px;
+}
+@media (max-width: 1200px) {
+    .social {
+        font-size: calc(17px + (20 - 15) * (100vw - 320px) / (1200 - 320));
+    }
+    #media {
+        text-align: center;
+    }
+}
+.info {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+#ya {
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.46);
+}
+
+#off_site{
+    font-size: 30px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.46);
+}
+
+@media (max-width: 1200px) {
+    #ya{
+        font-size: calc(70px + (90 - 70) * (100vw - 320px) / (1200 - 320));
+    }
+    #off_site{
+        font-size: calc(15px + (30 - 15) * (100vw - 320px) / (1200 - 320));
+    }
+}
+
+.container2 {
+    color: white;
+    background-color: rgb(117, 57, 113);
+    padding-top: 20px;
+}
+.about_me_label {
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.about_me_label h4 {
+    margin: 0;
+}
+
+.about_me {
+    margin: 20px 20px 0 60px ;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.about_me p {
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .about_me_label {
+        font-size: calc(26px + (40 - 26) * (100vw - 320px) / (1200 - 320));
+        margin-left: calc(10px + (30 - 10) * (100vw - 320px) / (1200 - 320));;
+    }
+    .about_me {
+        font-size: calc(10px + (20 - 10) * (100vw - 320px) / (1200 - 320));;
+        margin-left: calc(23px + (60 - 23) * (100vw - 320px) / (1200 - 320));;
+    }
+}
